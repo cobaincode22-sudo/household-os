@@ -1,7 +1,7 @@
 import { useHouseholdStore } from '@/store/householdStore';
 
-// URL backend VPS Hostinger yang sekarang aktif
-export const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://187.127.223.222:4000';
+// URL backend VPS Hostinger via Coolify Traefik Reverse Proxy (SSL HTTPS)
+export const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'https://coolify.janghendra.tech/household-api';
 
 export async function fetchHouseholdDashboard(householdId: string = 'hh_anderson') {
   try {
